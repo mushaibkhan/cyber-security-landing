@@ -5,11 +5,11 @@ import { motion } from "framer-motion";
 import { Check, ShieldCheck, Globe, Zap, Users, Lock } from "lucide-react";
 
 const differentiators = [
-    "Deep expertise in legacy DLP and modern DSPM",
-    "Proven methodologies with zero-day success",
-    "Vendor-agnostic consulting philosophy",
-    "Strong regulatory and legal understanding",
-    "Unified cloud-endpoint-network protection"
+    "Risk-centric approach with measurable outcomes",
+    "Deep expertise in legacy and cloud-native protection",
+    "Vendor-agnostic execution and integration",
+    "Accelerated time-to-value with proven playbooks",
+    "Audit-ready deliverables and compliance assurance"
 ];
 
 export default function Trust() {
@@ -40,7 +40,7 @@ export default function Trust() {
                                 <h4 className="text-xl font-bold text-white">Global Compliance Reach</h4>
                             </div>
                             <p className="text-slate-400 text-sm leading-relaxed">
-                                Strategic alignment with <span className="text-cyber-violet font-bold">PCI DSS, HIPAA, GLBA, SOX, CCPA, CPRA, NYDFS, CDPA, NIST 800-53/171, and ISO 27001</span>. We protect you from multimillion-dollar regulatory penalties.
+                                Strategic alignment with <span className="text-cyber-violet font-bold">PCI DSS, HIPAA/HITECH, GLBA, SOX, FERPA, CCPA/CPRA, NYDFS, Virginia CDPA, Colorado Privacy Act, NIST 800-53/171, and ISO 27001.</span>
                             </p>
                         </div>
                     </motion.div>

@@ -4,7 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const logos = [
-    "FORTUNE 500", "NETCORP", "CYBERLY", "DATASTRATA", "QUANTUM", "SECURELY"
+    "MICROSOFT PURVIEW", "SYMANTEC", "FORCEPOINT", "TRELLIX", "NETSKOPE", "PROOFPOINT", "ZSCALER"
 ];
 
 export default function TrustedBy() {
@@ -12,7 +12,7 @@ export default function TrustedBy() {
         <section className="py-12 border-y border-white/5 bg-slate-950/30 overflow-hidden">
             <div className="container mx-auto px-6">
                 <p className="text-center text-xs font-bold uppercase tracking-[0.3em] text-slate-500 mb-10">
-                    Trusted by Industry Leaders Worldwide
+                    Supported Platforms & Integrations
                 </p>
 
                 <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16 lg:gap-24 opacity-50 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-700">

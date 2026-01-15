@@ -17,66 +17,45 @@ import {
 const services = [
     {
         title: "Data Security Posture Assessment",
-        desc: "Complete evaluation of configurations, policy effectiveness, and compliance alignment.",
+        desc: "Evaluate configurations, identify policy gaps, and map controls to compliance frameworks (PCI, HIPAA, NIST).",
         icon: Settings2,
         color: "text-cyber-blue",
         bg: "bg-cyber-blue/10"
     },
     {
         title: "Sensitive Data Discovery",
-        desc: "Uncover PII, PHI, and PCI across cloud, SaaS, on-prem, and endpoints.",
+        desc: "Scan across AWS, Azure, GCP, SaaS, and endpoints to build a centralized, tagged data inventory.",
         icon: Search,
         color: "text-cyber-cyan",
         bg: "bg-cyber-cyan/10"
     },
     {
-        title: "Intelligent Classification",
-        desc: "Accurate labeling framework for financial data, IP, and confidential records.",
+        title: "Data Classification & Governance",
+        desc: "Automate tagging of PII, PHI, PCI, and IP. Enforce retention, encryption, and secure sharing policies.",
         icon: FileText,
         color: "text-cyber-violet",
         bg: "bg-cyber-violet/10"
     },
     {
-        title: "Lifecycle Management",
-        desc: "Enforcing retention, encryption, and secure sharing from creation to deletion.",
-        icon: Database,
+        title: "Monitoring & Enforcement",
+        desc: "Detect and block exfiltration via email, web, USB, and cloud. Enable continuous behavioral monitoring.",
+        icon: Eye,
         color: "text-cyber-green",
         bg: "bg-cyber-green/10"
     },
     {
-        title: "Data Movement Monitoring",
-        desc: "Oversight of data in motion, at rest, and sharing across all platforms.",
-        icon: Eye,
+        title: "Regulatory Compliance",
+        desc: "Align with PCI DSS, HIPAA/HITECH, GLBA, SOX, CCPA, and ISO 27001. Generate audit-ready evidence.",
+        icon: ShieldAlert,
         color: "text-cyber-blue",
         bg: "bg-cyber-blue/10"
     },
     {
-        title: "Enforcement of Block Policies",
-        desc: "Robust DLP controls for email, web uploads, USB, and shadow IT.",
-        icon: Lock,
+        title: "DLP Policy Optimization",
+        desc: "Consolidate legacy policies, reduce false positives, and modernize enforcement logic while preserving business rules.",
+        icon: RefreshCcw,
         color: "text-cyber-cyan",
         bg: "bg-cyber-cyan/10"
-    },
-    {
-        title: "Regulatory Fine Protection",
-        desc: "Alignment with PCI DSS, HIPAA, CCPA, CPRA, NIST, and ISO 27001.",
-        icon: ShieldAlert,
-        color: "text-cyber-violet",
-        bg: "bg-cyber-violet/10"
-    },
-    {
-        title: "Policy Consolidation",
-        desc: "Reducing false positives and standardizing rule sets for better accuracy.",
-        icon: RefreshCcw,
-        color: "text-cyber-green",
-        bg: "bg-cyber-green/10"
-    },
-    {
-        title: "DLP Tool Migration",
-        desc: "Support between Microsoft Purview, Netskope, Zscaler, Forcepoint, and more.",
-        icon: ArrowRightLeft,
-        color: "text-cyber-blue",
-        bg: "bg-cyber-blue/10"
     }
 ];
 
