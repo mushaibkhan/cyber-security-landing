@@ -1,81 +1,89 @@
-# SecureFrame Data Security Posture Management (SFDSPM)
+# SFDSPM - Strategic Data Protection for the Modern Enterprise
 
 ![SFDSPM Shield](./src/app/icon.png)
 
 ## Overview
 
-**SecureFrame Data Security Posture Management (SFDSPM)** is a cutting-edge landing page designed to showcase premium consulting services for **Data Loss Prevention (DLP)** and **Data Security Posture Management (DSPM)**.
+**SFDSPM** delivers outcome-driven **Data Loss Prevention (DLP)** and **Data Security Posture Management (DSPM)** consulting. We help CISOs reduce data exposure, enforce governance, and align with regulatory frameworks across hybrid environments.
 
-Our mission is to help organizations discover, classify, govern, and monitor their sensitive data (PII, PHI, PCI) across complex cloud and on-premise environments.
+Our services are engineered to provide visibility, control, and measurable risk reduction across cloud, SaaS, endpoint, and on-prem data flows.
 
-## Features
+## Core Capabilities
 
--   **Modern UI/UX:** Built with a "Cyber Dark" aesthetic using neon accents, glassmorphism, and smooth animations.
--   **Responsive Design:** Fully optimized for desktop, tablet, and mobile devices.
--   **Interactive Elements:** Smooth scrolling, hover effects, and motion graphics powered by Framer Motion.
--   **SEO Optimized:** Comprehensive metadata, OpenGraph tags, and sitemap configuration.
+-   **Data Security Posture Assessment**: Evaluate configurations, telemetry, and policy gaps.
+-   **Sensitive Data Discovery**: Scan AWS, Azure, GCP, SaaS, and endpoints for PII, PHI, PCI.
+-   **Data Classification & Governance**: Automate tagging and enforce retention/encryption policies.
+-   **Monitoring & Enforcement**: Detect and block exfiltration via email, web, USB, and cloud.
+-   **Regulatory Compliance Alignment**: Map controls to PCI DSS, HIPAA, NIST, ISO 27001, etc.
+-   **DLP Policy Optimization**: Consolidate legacy policies and modernize enforcement.
 
 ## Technology Stack
 
 This project is built with the latest modern web technologies:
 
--   **Framework:** [Next.js 15](https://nextjs.org/) (App Router)
--   **Library:** [React 19](https://react.dev/)
--   **Styling:** [Tailwind CSS v4](https://tailwindcss.com/)
--   **Animations:** [Framer Motion](https://www.framer.com/motion/)
--   **Icons:** [Lucide React](https://lucide.dev/)
--   **Font:** [Geist](https://vercel.com/font) (Sans & Mono)
+-   **Framework**: [Next.js 16](https://nextjs.org/) (App Router)
+-   **Library**: [React 19](https://react.dev/)
+-   **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
+-   **Animations**: [Framer Motion](https://www.framer.com/motion/)
+-   **Icons**: [Lucide React](https://lucide.dev/)
+-   **Email Service**: [EmailJS](https://www.emailjs.com/)
+
+## Getting Started
+
+### Prerequisites
+
+-   Node.js 18+ installed
+-   An EmailJS account (for the contact form)
+
+### Installation
+
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/your-username/sfdspm-landing.git
+    cd sfdspm-landing
+    ```
+
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    # Ensure @emailjs/browser is installed
+    npm install @emailjs/browser
+    ```
+
+3.  **Configure EmailJS:**
+    Open `src/components/sections/Contact.tsx` and replace the placeholder keys with your actual credentials from the [EmailJS Dashboard](https://dashboard.emailjs.com/):
+    ```typescript
+    emailjs.sendForm(
+        'YOUR_SERVICE_ID',
+        'YOUR_TEMPLATE_ID',
+        form.current,
+        'YOUR_PUBLIC_KEY'
+    )
+    ```
+
+4.  **Run the development server:**
+    ```bash
+    npm run dev
+    ```
+
+5.  **Open your browser:**
+    Navigate to [http://localhost:3000](http://localhost:3000) to view the site.
 
 ## Project Structure
 
 ```
 src/
 ├── app/
-│   ├── globals.css      # Global styles & Tailwind theme
 │   ├── layout.tsx       # Root layout & SEO metadata
-│   ├── page.tsx         # Main landing page
-│   ├── icon.png         # Favicon
-│   ├── robots.ts        # Search engine crawler config
-│   └── sitemap.ts       # Sitemap config
+│   ├── page.tsx         # Main landing page composition
+│   └── globals.css      # Tailwind imports & custom utilities
 ├── components/
 │   ├── layout/          # Navbar, Footer
-│   ├── sections/        # Page sections (Hero, Features, Trust, etc.)
-│   └── ui/              # Reusable UI components (Buttons, Cards)
-└── lib/                 # Utilities (cn helper)
+│   ├── sections/        # Hero, Features, Trust, Process, Contact, etc.
+│   └── ui/              # Reusable UI atoms
+└── lib/                 # Utility functions
 ```
-
-## Getting Started
-
-1.  **Clone the repository:**
-    ```bash
-    git clone https://github.com/your-username/cyber-security-landing.git
-    cd cyber-security-landing
-    ```
-
-2.  **Install dependencies:**
-    ```bash
-    npm install
-    ```
-
-3.  **Run the development server:**
-    ```bash
-    npm run dev
-    ```
-
-4.  **Open your browser:**
-    Navigate to [http://localhost:3000](http://localhost:3000) to view the site.
-
-## key Sections
-
-1.  **Hero:** Value proposition and call to action.
-2.  **Trusted By:** Social proof validation.
-3.  **Services (Features):** Detailed consulting offerings (Risk Assessment, Data Discovery, etc.).
-4.  **Trust & Compliance:** Frameworks supported (GDPR, HIPAA, NIST, etc.).
-5.  **Our Process:** The 4-step methodology (Discover, Classify, Govern, Monitor).
-6.  **Tech Stack:** Tools and platforms we work with.
-7.  **Pricing:** Transparent engagement models.
-8.  **Contact:** Lead generation form.
 
 ## License
 
-All rights reserved © 2026 SFDSPM Excellence.
+All rights reserved © 2026 Origin Softwares.

@@ -1,22 +1,39 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { motion } from "framer-motion";
 import { Send, Mail, MapPin, Phone, ShieldCheck } from "lucide-react";
 import { cn } from "@/lib/utils";
+import emailjs from '@emailjs/browser';
 
 export default function Contact() {
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [submitted, setSubmitted] = useState(false);
+    const form = useRef<HTMLFormElement>(null);
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
         setIsSubmitting(true);
-        // Simulate API call
-        setTimeout(() => {
-            setIsSubmitting(false);
-            setSubmitted(true);
-        }, 1500);
+
+        if (form.current) {
+            // REPLACE THESE WITH YOUR ACTUAL EMAILJS KEYS
+            // Sign up at https://www.emailjs.com/
+            emailjs.sendForm(
+                'YOUR_SERVICE_ID', 
+                'YOUR_TEMPLATE_ID', 
+                form.current, 
+                'YOUR_PUBLIC_KEY'
+            )
+            .then((result) => {
+                console.log(result.text);
+                setIsSubmitting(false);
+                setSubmitted(true);
+            }, (error) => {
+                console.error(error.text);
+                setIsSubmitting(false);
+                alert("Failed to send message. Please try again.");
+            });
+        }
     };
 
     return (
@@ -107,11 +124,12 @@ export default function Contact() {
                                 </button>
                             </div>
                         ) : (
-                            <form onSubmit={handleSubmit} className="space-y-6">
+                            <form ref={form} onSubmit={handleSubmit} className="space-y-6">
                                 <div className="grid md:grid-cols-2 gap-6">
                                     <div className="space-y-2">
                                         <label className="text-xs font-bold text-slate-300 uppercase tracking-widest ml-1">Full Name</label>
                                         <input
+                                            name="user_name"
                                             required
                                             type="text"
                                             placeholder="Jane Doe"
@@ -121,6 +139,7 @@ export default function Contact() {
                                     <div className="space-y-2">
                                         <label className="text-xs font-bold text-slate-300 uppercase tracking-widest ml-1">Email Address</label>
                                         <input
+                                            name="user_email"
                                             required
                                             type="email"
                                             placeholder="jane@company.com"
@@ -132,6 +151,7 @@ export default function Contact() {
                                 <div className="space-y-2">
                                     <label className="text-xs font-bold text-slate-300 uppercase tracking-widest ml-1">Company / Organization</label>
                                     <input
+                                        name="company"
                                         required
                                         type="text"
                                         placeholder="SFDSPM Tech"
@@ -142,6 +162,7 @@ export default function Contact() {
                                 <div className="space-y-2">
                                     <label className="text-xs font-bold text-slate-300 uppercase tracking-widest ml-1">Message</label>
                                     <textarea
+                                        name="message"
                                         required
                                         rows={4}
                                         placeholder="Describe your security needs..."
