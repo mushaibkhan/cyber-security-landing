@@ -32,7 +32,7 @@ export default function TechStack() {
                 <div className="space-y-12">
                     {groups.map((group, idx) => (
                         <div key={idx} className="flex flex-col md:flex-row md:items-start gap-4 md:gap-0">
-                            <h3 className="text-[10px] font-black uppercase tracking-[0.4em] text-cyber-blue w-64 md:pt-3">
+                            <h3 className="text-[10px] font-black uppercase tracking-[0.4em] text-sf w-64 md:pt-3">
                                 {group.category}
                             </h3>
                             <div className="flex flex-wrap gap-3 flex-1">
@@ -40,7 +40,7 @@ export default function TechStack() {
                                     <motion.span
                                         key={tech}
                                         whileHover={{ scale: 1.05, y: -2 }}
-                                        className="px-5 py-2 glass rounded-xl text-sm font-semibold border-white/5 hover:border-cyber-blue/30 transition-all cursor-default text-white"
+                                        className="px-5 py-2 glass rounded-xl text-sm font-semibold border-white/5 hover:border-sf/30 transition-all cursor-default text-white"
                                     >
                                         {tech}
                                     </motion.span>

@@ -2,7 +2,7 @@
 
 import React, { useState, useRef } from "react";
 import { motion } from "framer-motion";
-import { Send, Mail, MapPin, Phone, ShieldCheck } from "lucide-react";
+import { Send, Mail, MapPin, ShieldCheck } from "lucide-react";
 import { cn } from "@/lib/utils";
 import emailjs from '@emailjs/browser';
 
@@ -19,10 +19,10 @@ export default function Contact() {
             // REPLACE THESE WITH YOUR ACTUAL EMAILJS KEYS
             // Sign up at https://www.emailjs.com/
             emailjs.sendForm(
-                'YOUR_SERVICE_ID', 
-                'YOUR_TEMPLATE_ID', 
+                'service_qxgapih', 
+                'template_xtmg0ej', 
                 form.current, 
-                'YOUR_PUBLIC_KEY'
+                '_1XDcSPjowbppxkUr'
             )
             .then((result) => {
                 console.log(result.text);
@@ -39,7 +39,7 @@ export default function Contact() {
     return (
         <section id="contact" className="py-24 relative overflow-hidden">
             {/* Background Glow */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-cyber-blue/5 rounded-full blur-[120px] -z-10" />
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-sf/5 rounded-full blur-[120px] -z-10" />
 
             <div className="container mx-auto px-6">
                 <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -50,7 +50,7 @@ export default function Contact() {
                         viewport={{ once: true }}
                     >
                         <h2 className="text-4xl lg:text-6xl font-black mb-6 leading-tight">
-                            Secure your <span className="text-cyber-blue">Most Sensitive</span> Information
+                            Secure your <span className="text-sf">Most Sensitive</span> Information
                         </h2>
                         <p className="text-slate-300 text-lg mb-8 max-w-md leading-relaxed">
                             Empowering organizations to discover, classify, govern, and secure sensitive data—while avoiding costly breaches and regulatory penalties.
@@ -61,39 +61,29 @@ export default function Contact() {
 
                         <div className="space-y-8">
                             <div className="flex items-center space-x-4 group">
-                                <div className="w-12 h-12 glass rounded-xl flex items-center justify-center border-white/10 group-hover:border-cyber-blue/50 transition-colors">
-                                    <Mail className="w-5 h-5 text-cyber-blue" />
+                                <div className="w-12 h-12 glass rounded-xl flex items-center justify-center border-white/10 group-hover:border-sf/50 transition-colors">
+                                    <Mail className="w-5 h-5 text-sf" />
                                 </div>
                                 <div>
                                     <p className="text-xs font-bold text-slate-500 uppercase tracking-widest">Email Us</p>
-                                    <p className="text-white font-medium">security@sfdspm.com</p>
+                                    <p className="text-white font-medium">info@sfdspm.com</p>
                                 </div>
                             </div>
 
                             <div className="flex items-center space-x-4 group">
-                                <div className="w-12 h-12 glass rounded-xl flex items-center justify-center border-white/10 group-hover:border-cyber-violet/50 transition-colors">
-                                    <Phone className="w-5 h-5 text-cyber-violet" />
-                                </div>
-                                <div>
-                                    <p className="text-xs font-bold text-slate-500 uppercase tracking-widest">Call Expert</p>
-                                    <p className="text-white font-medium">+1 (555) 234-5678</p>
-                                </div>
-                            </div>
-
-                            <div className="flex items-center space-x-4 group">
-                                <div className="w-12 h-12 glass rounded-xl flex items-center justify-center border-white/10 group-hover:border-cyber-green/50 transition-colors">
-                                    <MapPin className="w-5 h-5 text-cyber-green" />
+                                <div className="w-12 h-12 glass rounded-xl flex items-center justify-center border-white/10 group-hover:border-dspm/50 transition-colors">
+                                    <MapPin className="w-5 h-5 text-dspm" />
                                 </div>
                                 <div>
                                     <p className="text-xs font-bold text-slate-500 uppercase tracking-widest">Global HQ</p>
-                                    <p className="text-white font-medium">San Francisco, CA</p>
+                                    <p className="text-white font-medium">Austin, Texas</p>
                                 </div>
                             </div>
                         </div>
 
-                        <div className="mt-12 p-6 glass rounded-2xl border-cyber-blue/20 bg-cyber-blue/5">
+                        <div className="mt-12 p-6 glass rounded-2xl border-sf/20 bg-sf/5">
                             <div className="flex items-center space-x-3 mb-2">
-                                <ShieldCheck className="w-5 h-5 text-cyber-blue" />
+                                <ShieldCheck className="w-5 h-5 text-sf" />
                                 <span className="text-sm font-bold text-white tracking-wide">Secure Communication</span>
                             </div>
                             <p className="text-xs text-slate-500 leading-relaxed">
@@ -111,14 +101,14 @@ export default function Contact() {
                     >
                         {submitted ? (
                             <div className="py-20 text-center">
-                                <div className="w-20 h-20 bg-cyber-blue/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                                    <ShieldCheck className="w-10 h-10 text-cyber-blue" />
+                                <div className="w-20 h-20 bg-sf/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                                    <ShieldCheck className="w-10 h-10 text-sf" />
                                 </div>
                                 <h3 className="text-2xl font-bold mb-2">Transmission Received</h3>
-                                <p className="text-slate-400">An SFDSPM security expert will contact you within 24 hours.</p>
+                                <p className="text-slate-400">An <span className="text-sf">SF</span><span className="text-dspm">DSPM</span> security expert will contact you within 24 hours.</p>
                                 <button
                                     onClick={() => setSubmitted(false)}
-                                    className="mt-8 text-cyber-blue text-sm font-bold hover:underline"
+                                    className="mt-8 text-sf text-sm font-bold hover:underline"
                                 >
                                     Send another message
                                 </button>
@@ -133,7 +123,7 @@ export default function Contact() {
                                             required
                                             type="text"
                                             placeholder="Jane Doe"
-                                            className="w-full bg-slate-800/40 border border-white/10 rounded-xl px-4 py-4 text-white placeholder:text-slate-500 focus:outline-none focus:border-cyber-blue/50 focus:bg-slate-800/60 transition-all font-semibold"
+                                            className="w-full bg-slate-800/40 border border-white/10 rounded-xl px-4 py-4 text-white placeholder:text-slate-500 focus:outline-none focus:border-sf/50 focus:bg-slate-800/60 transition-all font-semibold"
                                         />
                                     </div>
                                     <div className="space-y-2">
@@ -143,7 +133,7 @@ export default function Contact() {
                                             required
                                             type="email"
                                             placeholder="jane@company.com"
-                                            className="w-full bg-slate-800/40 border border-white/10 rounded-xl px-4 py-4 text-white placeholder:text-slate-500 focus:outline-none focus:border-cyber-blue/50 focus:bg-slate-800/60 transition-all font-semibold"
+                                            className="w-full bg-slate-800/40 border border-white/10 rounded-xl px-4 py-4 text-white placeholder:text-slate-500 focus:outline-none focus:border-sf/50 focus:bg-slate-800/60 transition-all font-semibold"
                                         />
                                     </div>
                                 </div>
@@ -155,7 +145,7 @@ export default function Contact() {
                                         required
                                         type="text"
                                         placeholder="SFDSPM Tech"
-                                        className="w-full bg-slate-800/40 border border-white/10 rounded-xl px-4 py-4 text-white placeholder:text-slate-500 focus:outline-none focus:border-cyber-blue/50 focus:bg-slate-800/60 transition-all font-semibold"
+                                        className="w-full bg-slate-800/40 border border-white/10 rounded-xl px-4 py-4 text-white placeholder:text-slate-500 focus:outline-none focus:border-sf/50 focus:bg-slate-800/60 transition-all font-semibold"
                                     />
                                 </div>
 
@@ -166,7 +156,7 @@ export default function Contact() {
                                         required
                                         rows={4}
                                         placeholder="Describe your security needs..."
-                                        className="w-full bg-slate-800/40 border border-white/10 rounded-xl px-4 py-4 text-white placeholder:text-slate-500 focus:outline-none focus:border-cyber-blue/50 focus:bg-slate-800/60 transition-all font-semibold resize-none"
+                                        className="w-full bg-slate-800/40 border border-white/10 rounded-xl px-4 py-4 text-white placeholder:text-slate-500 focus:outline-none focus:border-sf/50 focus:bg-slate-800/60 transition-all font-semibold resize-none"
                                     />
                                 </div>
 
@@ -174,7 +164,7 @@ export default function Contact() {
                                     disabled={isSubmitting}
                                     className={cn(
                                         "w-full py-4 rounded-xl font-black transition-all flex items-center justify-center space-x-2 overflow-hidden relative group",
-                                        isSubmitting ? "bg-slate-800 text-slate-500 cursor-not-allowed" : "bg-cyber-blue text-slate-950 hover:shadow-[0_0_30px_rgba(0,242,255,0.4)]"
+                                        isSubmitting ? "bg-slate-800 text-slate-500 cursor-not-allowed" : "bg-sf text-slate-950 hover:shadow-[0_0_30px_rgba(0,242,255,0.4)]"
                                     )}
                                 >
                                     {isSubmitting ? (

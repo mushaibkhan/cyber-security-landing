@@ -22,25 +22,25 @@ export default function Trust() {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                     >
-                        <h2 className="text-4xl lg:text-6xl font-black mb-8">Why Choose <span className="text-cyber-blue">SFDSPM?</span></h2>
+                        <h2 className="text-4xl lg:text-6xl font-black mb-8">Why Choose <span className="text-sf">SF</span><span className="text-dspm">DSPM?</span></h2>
                         <div className="space-y-6">
                             {differentiators.map((text, i) => (
                                 <div key={i} className="flex items-start space-x-4">
-                                    <div className="mt-1 w-6 h-6 rounded-full bg-cyber-blue/10 flex items-center justify-center border border-cyber-blue/30 shrink-0">
-                                        <Check className="w-4 h-4 text-cyber-blue" />
+                                    <div className="mt-1 w-6 h-6 rounded-full bg-sf/10 flex items-center justify-center border border-sf/30 shrink-0">
+                                        <Check className="w-4 h-4 text-sf" />
                                     </div>
                                     <p className="text-slate-300 font-medium text-lg leading-tight">{text}</p>
                                 </div>
                             ))}
                         </div>
 
-                        <div className="mt-12 p-8 glass rounded-3xl border-cyber-violet/20 bg-cyber-violet/5">
+                        <div className="mt-12 p-8 glass rounded-3xl border-dspm/20 bg-dspm/5">
                             <div className="flex items-center space-x-4 mb-4">
-                                <Globe className="w-8 h-8 text-cyber-violet" />
+                                <Globe className="w-8 h-8 text-dspm" />
                                 <h4 className="text-xl font-bold text-white">Global Compliance Reach</h4>
                             </div>
                             <p className="text-slate-400 text-sm leading-relaxed">
-                                Strategic alignment with <span className="text-cyber-violet font-bold">PCI DSS, HIPAA/HITECH, GLBA, SOX, FERPA, CCPA/CPRA, NYDFS, Virginia CDPA, Colorado Privacy Act, NIST 800-53/171, and ISO 27001.</span>
+                                Strategic alignment with <span className="text-dspm font-bold">PCI DSS, HIPAA/HITECH, GLBA, SOX, FERPA, CCPA/CPRA, NYDFS, Virginia CDPA, Colorado Privacy Act, NIST 800-53/171, and ISO 27001.</span>
                             </p>
                         </div>
                     </motion.div>
@@ -52,10 +52,10 @@ export default function Trust() {
                         className="grid sm:grid-cols-2 gap-6"
                     >
                         {[
-                            { label: "Expertise", title: "DLP & DSPM", Icon: ShieldCheck, color: "text-cyber-blue" },
-                            { label: "Consulting", title: "Vendor Agnostic", Icon: Users, color: "text-cyber-violet" },
-                            { label: "Protection", title: "Endpoint & Cloud", Icon: Lock, color: "text-cyber-cyan" },
-                            { label: "Implementation", title: "Proven Methods", Icon: Zap, color: "text-cyber-green" }
+                            { label: "Expertise", title: "DLP & DSPM", Icon: ShieldCheck, color: "text-sf" },
+                            { label: "Consulting", title: "Vendor Agnostic", Icon: Users, color: "text-dspm" },
+                            { label: "Protection", title: "Endpoint & Cloud", Icon: Lock, color: "text-sf/80" },
+                            { label: "Implementation", title: "Proven Methods", Icon: Zap, color: "text-dspm/80" }
                         ].map((stat, i) => (
                             <div key={i} className="p-8 glass rounded-[2.5rem] border-white/5 hover:border-white/10 transition-colors">
                                 <stat.Icon className={`w-10 h-10 ${stat.color} mb-6`} />

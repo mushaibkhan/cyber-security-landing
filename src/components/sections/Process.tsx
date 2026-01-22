@@ -9,29 +9,29 @@ const steps = [
         title: "Discover",
         description: "Scan AWS, Azure, GCP, SaaS, and endpoints to identify sensitive data (PII, PHI, PCI).",
         icon: Search,
-        color: "bg-cyber-blue/10",
-        iconColor: "text-cyber-blue",
+        color: "bg-sf/10",
+        iconColor: "text-sf",
     },
     {
         title: "Classify",
         description: "Apply metadata and tags for confidential, internal, and public data using ML-driven patterns.",
         icon: FileText,
-        color: "bg-cyber-cyan/10",
-        iconColor: "text-cyber-cyan",
+        color: "bg-sf/10",
+        iconColor: "text-sf/80",
     },
     {
         title: "Monitor",
         description: "Track data lineage and usage across email, web, USB, and cloud to detect anomalies.",
         icon: Eye,
-        color: "bg-cyber-violet/10",
-        iconColor: "text-cyber-violet",
+        color: "bg-dspm/10",
+        iconColor: "text-dspm",
     },
     {
         title: "Enforce",
         description: "Block unauthorized transfers, encrypt sensitive files, and automate incident response.",
         icon: ShieldCheck,
-        color: "bg-cyber-green/10",
-        iconColor: "text-cyber-green",
+        color: "bg-dspm/10",
+        iconColor: "text-dspm/80",
     },
 ];
 
@@ -48,7 +48,7 @@ export default function Process() {
                     </div>
                     <div className="lg:w-1/2 flex justify-center">
                         <div className="relative p-1 glass rounded-[2rem] overflow-hidden group w-full max-w-md">
-                            <div className="absolute inset-0 bg-gradient-to-br from-cyber-blue/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                            <div className="absolute inset-0 bg-gradient-to-br from-sf/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                             <div className="relative bg-slate-900/80 rounded-[1.8rem] p-8 border border-white/5">
                                 <div className="flex space-x-2 mb-6">
                                     <div className="w-3 h-3 rounded-full bg-red-500/50" />
@@ -58,11 +58,11 @@ export default function Process() {
                                 <div className="space-y-3 font-mono text-xs lg:text-sm">
                                     <div className="flex items-center space-x-2">
                                         <span className="text-slate-500">$</span>
-                                        <span className="text-cyber-blue">sfdspm scan --scope cloud</span>
+                                        <span className="text-sf">sfdspm scan --scope cloud</span>
                                     </div>
                                     <div className="text-slate-400">[INFO] Scanning AWS S3 Bucket...</div>
                                     <div className="text-amber-400/80">[WARN] Unclassified PII detected (1,402 records)</div>
-                                    <div className="text-cyber-blue/80">[ACTION] Applying encryption & classification...</div>
+                                    <div className="text-sf/80">[ACTION] Applying encryption & classification...</div>
                                     <div className="text-emerald-400">[SUCCESS] Posture hardened. Compliance: SOC2/HIPAA</div>
                                 </div>
                             </div>
@@ -72,7 +72,7 @@ export default function Process() {
 
                 <div className="grid md:grid-cols-4 gap-8 relative">
                     {/* Connection Line */}
-                    <div className="hidden md:block absolute top-12 left-0 w-full h-0.5 bg-gradient-to-r from-cyber-blue/50 via-cyber-violet/50 to-cyber-green/50 -z-10" />
+                    <div className="hidden md:block absolute top-12 left-0 w-full h-0.5 bg-gradient-to-r from-sf/50 via-dspm/50 to-dspm/30 -z-10" />
 
                     {steps.map((step, idx) => (
                         <motion.div
@@ -83,7 +83,7 @@ export default function Process() {
                             viewport={{ once: true }}
                             className="text-center group"
                         >
-                            <div className={`w-24 h-24 mx-auto mb-6 rounded-full glass flex items-center justify-center border-cyber-blue/20 group-hover:border-cyber-blue group-hover:shadow-[0_0_25px_rgba(0,242,255,0.3)] transition-all duration-500 bg-slate-900`}>
+                            <div className={`w-24 h-24 mx-auto mb-6 rounded-full glass flex items-center justify-center border-sf/20 group-hover:border-sf group-hover:shadow-[0_0_25px_rgba(0,242,255,0.3)] transition-all duration-500 bg-slate-900`}>
                                 <step.icon className={`w-10 h-10 ${step.iconColor}`} />
                             </div>
                             <h4 className="text-xl font-bold mb-2 text-white">{step.title}</h4>

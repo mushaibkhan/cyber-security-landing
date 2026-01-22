@@ -10,7 +10,6 @@ import Logo from "@/components/ui/Logo";
 const navLinks = [
     { name: "Solutions", href: "#solutions" },
     { name: "How It Works", href: "#how-it-works" },
-    { name: "Pricing", href: "#pricing" },
     { name: "Contact", href: "#contact" },
 ];
 
@@ -42,8 +41,8 @@ export default function Navbar() {
             <div className="container mx-auto px-6 flex items-center justify-between">
                 <Link href="/" className="flex items-center space-x-3 group">
                     <Logo className="w-10 h-10" />
-                    <span className="text-xl font-bold tracking-tight text-white">
-                        SFDS<span className="text-cyber-blue">PM</span>
+                    <span className="text-xl font-bold tracking-tight text-white leading-none">
+                        <span className="text-sf">SF</span><span className="text-white">DSPM</span>
                     </span>
                 </Link>
 
@@ -53,14 +52,14 @@ export default function Navbar() {
                         <Link
                             key={link.name}
                             href={link.href}
-                            className="text-sm font-medium text-slate-300 hover:text-cyber-blue transition-colors"
+                            className="text-sm font-medium text-slate-300 hover:text-sf transition-colors"
                         >
                             {link.name}
                         </Link>
                     ))}
                     <button
                         onClick={scrollToContact}
-                        className="px-5 py-2 rounded-full bg-cyber-blue text-slate-950 text-sm font-bold hover:bg-cyber-blue/80 transition-shadow hover:shadow-[0_0_20px_rgba(0,242,255,0.4)]"
+                        className="px-5 py-2 rounded-full bg-sf text-slate-950 text-sm font-bold hover:bg-sf/80 transition-shadow hover:shadow-[0_0_20px_rgba(0,242,255,0.4)]"
                     >
                         Security Audit
                     </button>
@@ -97,7 +96,7 @@ export default function Navbar() {
                             ))}
                             <button
                                 onClick={() => { scrollToContact(); setMobileMenuOpen(false); }}
-                                className="w-full px-5 py-3 rounded-xl bg-cyber-blue text-slate-950 font-bold"
+                                className="w-full px-5 py-3 rounded-xl bg-sf text-slate-950 font-bold"
                             >
                                 Request Audit
                             </button>
