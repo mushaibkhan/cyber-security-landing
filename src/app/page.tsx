@@ -2,6 +2,7 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Hero from "@/components/sections/Hero";
 import TrustedBy from "@/components/sections/TrustedBy";
+import DlpServices from "@/components/sections/DlpServices";
 import Features from "@/components/sections/Features";
 import Process from "@/components/sections/Process";
 import Contact from "@/components/sections/Contact";
@@ -16,6 +17,7 @@ export default function Home() {
         <Hero />
         <TrustedBy />
         <Features />
+        <DlpServices />
         <Trust />
         <Process />
         <TechStack />
