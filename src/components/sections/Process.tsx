@@ -39,36 +39,13 @@ export default function Process() {
     return (
         <section id="how-it-works" className="py-24 relative overflow-hidden">
             <div className="container mx-auto px-6">
-                <div className="flex flex-col lg:flex-row items-center justify-between mb-20 gap-12">
-                    <div className="lg:max-w-xl">
-                        <h2 className="text-3xl lg:text-5xl font-black mb-6">Regain Visibility & Control.</h2>
-                        <p className="text-slate-400 text-lg leading-relaxed">
-                            Our systematic approach to Data Security Posture Management ensures your most sensitive assets are protected wherever they live, move, or evolve.
-                        </p>
-                    </div>
-                    <div className="lg:w-1/2 flex justify-center">
-                        <div className="relative p-1 glass rounded-[2rem] overflow-hidden group w-full max-w-md">
-                            <div className="absolute inset-0 bg-gradient-to-br from-sf/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                            <div className="relative bg-slate-900/80 rounded-[1.8rem] p-8 border border-white/5">
-                                <div className="flex space-x-2 mb-6">
-                                    <div className="w-3 h-3 rounded-full bg-red-500/50" />
-                                    <div className="w-3 h-3 rounded-full bg-amber-500/50" />
-                                    <div className="w-3 h-3 rounded-full bg-emerald-500/50" />
-                                </div>
-                                <div className="space-y-3 font-mono text-xs lg:text-sm">
-                                    <div className="flex items-center space-x-2">
-                                        <span className="text-slate-500">$</span>
-                                        <span className="text-sf">sfdspm scan --scope cloud</span>
-                                    </div>
-                                    <div className="text-slate-400">[INFO] Scanning AWS S3 Bucket...</div>
-                                    <div className="text-amber-400/80">[WARN] Unclassified PII detected (1,402 records)</div>
-                                    <div className="text-sf/80">[ACTION] Applying encryption & classification...</div>
-                                    <div className="text-emerald-400">[SUCCESS] Posture hardened. Compliance: SOC2/HIPAA</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div className="text-center mb-20">
+                    <h2 className="text-3xl lg:text-5xl font-black mb-6">Regain Visibility & Control.</h2>
+                    <p className="text-slate-400 text-lg leading-relaxed max-w-3xl mx-auto">
+                        Our systematic approach to Data Security Posture Management ensures your most sensitive assets are protected wherever they live, move, or evolve.
+                    </p>
                 </div>
+
 
                 <div className="grid md:grid-cols-4 gap-8 relative">
                     {/* Connection Line */}

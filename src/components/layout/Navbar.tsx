@@ -9,8 +9,9 @@ import Logo from "@/components/ui/Logo";
 
 const navLinks = [
     { name: "Solutions", href: "#solutions" },
+    { name: "Shift to MS Purview", href: "#purview" },
     { name: "How It Works", href: "#how-it-works" },
-    { name: "Contact", href: "#contact" },
+    { name: "Data Security Review", href: "#contact" },
 ];
 
 export default function Navbar() {
@@ -61,7 +62,7 @@ export default function Navbar() {
                         onClick={scrollToContact}
                         className="px-5 py-2 rounded-full bg-sf text-slate-950 text-sm font-bold hover:bg-sf/80 transition-shadow hover:shadow-[0_0_20px_rgba(0,242,255,0.4)]"
                     >
-                        Security Audit
+                        Contact
                     </button>
                 </div>
 
@@ -98,7 +99,7 @@ export default function Navbar() {
                                 onClick={() => { scrollToContact(); setMobileMenuOpen(false); }}
                                 className="w-full px-5 py-3 rounded-xl bg-sf text-slate-950 font-bold"
                             >
-                                Request Audit
+                                Contact
                             </button>
                         </div>
                     </motion.div>
@@ -107,3 +108,4 @@ export default function Navbar() {
         </nav>
     );
 }
+

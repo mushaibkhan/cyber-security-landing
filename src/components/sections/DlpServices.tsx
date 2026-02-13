@@ -12,8 +12,8 @@ import {
 
 const services = [
     {
-        title: "Expert Migration from Legacy DLP to Microsoft Purview DLP",
-        description: "Legacy DLP platforms often create complexity, blind spots, and operational overhead. We specialize in transforming those environments into streamlined, cloud-aligned Purview deployments.",
+        title: "Microsoft Purview Migration & Consolidation",
+        description: "Legacy DLP platforms often create complexity, blind spots, and operational overhead. We specialize in transforming those environments into streamlined, cloud-aligned Purview deployments that are secure and compliant.",
         icon: ArrowRightLeft,
         image: "/images/dlp/migration.jpg",
         features: [
@@ -54,7 +54,7 @@ const services = [
 
 export default function DlpServices() {
     return (
-        <section className="py-24 relative">
+        <section id="purview" className="py-24 relative">
             {/* Background Gradients */}
             <div className="absolute top-40 right-0 w-[500px] h-[500px] bg-sf/5 rounded-full blur-3xl -z-10" />
             <div className="absolute bottom-20 left-0 w-[500px] h-[500px] bg-dspm/5 rounded-full blur-3xl -z-10" />
@@ -67,10 +67,10 @@ export default function DlpServices() {
                         viewport={{ once: true }}
                     >
                         <h2 className="text-3xl lg:text-5xl font-black mb-6">
-                            Advanced <span className="text-transparent bg-clip-text bg-gradient-to-r from-sf to-dspm">DLP Services</span>
+                            Shift to <span className="text-transparent bg-clip-text bg-gradient-to-r from-sf to-dspm">MS Purview</span>
                         </h2>
                         <p className="text-slate-400 max-w-2xl mx-auto text-lg leading-relaxed">
-                            Transform your data protection strategy with our expert migration, classification, and optimization services.
+                            Modernize your data protection strategy with our expert migration, classification, and optimization services focused on Microsoft Purview.
                         </p>
                     </motion.div>
                 </div>
