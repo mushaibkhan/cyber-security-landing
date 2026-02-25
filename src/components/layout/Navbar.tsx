@@ -10,7 +10,7 @@ import Logo from "@/components/ui/Logo";
 const navLinks = [
     { name: "Solutions", href: "#solutions" },
     { name: "Shift to MS Purview", href: "#purview" },
-    { name: "How It Works", href: "#how-it-works" },
+    { name: "How DSPM Works", href: "#how-dspm-works" },
     { name: "Data Security Review", href: "#contact" },
 ];
 

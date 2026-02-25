@@ -15,7 +15,7 @@ const services = [
         title: "Microsoft Purview Migration & Consolidation",
         description: "Legacy DLP platforms often create complexity, blind spots, and operational overhead. We specialize in transforming those environments into streamlined, cloud-aligned Purview deployments that are secure and compliant.",
         icon: ArrowRightLeft,
-        image: "/images/dlp/migration.jpg",
+        image: "/images/dlp/purview_dlp.png",
         features: [
             "In-depth analysis of existing DLP rules & workflows",
             "Intelligent mapping to Purview capabilities",

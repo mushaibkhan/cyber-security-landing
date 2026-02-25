@@ -37,7 +37,7 @@ const steps = [
 
 export default function Process() {
     return (
-        <section id="how-it-works" className="py-24 relative overflow-hidden">
+        <section id="how-dspm-works" className="py-24 relative overflow-hidden">
             <div className="container mx-auto px-6">
                 <div className="text-center mb-20">
                     <h2 className="text-3xl lg:text-5xl font-black mb-6">Regain Visibility & Control.</h2>

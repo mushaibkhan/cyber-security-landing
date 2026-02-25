@@ -55,7 +55,7 @@ export default function Hero() {
             <button
               onClick={scrollToContact}
               className="relative w-full sm:w-auto px-10 py-5 rounded-2xl bg-sf text-slate-950 font-black hover:shadow-[0_0_40px_rgba(0,242,255,0.5)] transition-all flex items-center justify-center group overflow-hidden">
-              <span className="relative z-10">Get Data Security Review</span>
+              <span className="relative z-10">Data Security Review</span>
               <div className="absolute inset-0 bg-white/20 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-500" />
             </button>
             <button className="w-full sm:w-auto px-10 py-5 rounded-2xl glass text-white font-bold hover:bg-white/10 transition-all border border-white/10 flex items-center justify-center">

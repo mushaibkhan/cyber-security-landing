@@ -78,14 +78,9 @@ export default function Footer() {
 
                 <div className="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-xs text-slate-500 space-y-4 md:space-y-0">
                     <div className="flex flex-col md:flex-row md:items-center space-y-2 md:space-y-0 md:space-x-4">
-                        <p>© 2026 SecureFrame Technologies LLC. All rights reserved.</p>
+                        <div>© 2026 SecureFrame Technologies LLC. All rights reserved.</div>
                         <span className="hidden md:inline w-px h-3 bg-white/10" />
-                        <p>Designed By <span className="text-sf font-semibold">Origin Softwares</span></p>
-                    </div>
-                    <div className="flex space-x-8">
-                        <a href="#" className="hover:text-white transition-colors">Trust Center</a>
-                        <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-                        <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
+                        <div>Designed By <a href="https://originsoftwares.com/" target="_blank" rel="noopener noreferrer" className="text-sf font-semibold hover:underline">Origin Softwares</a></div>
                     </div>
                 </div>
 

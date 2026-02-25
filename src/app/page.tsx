@@ -4,6 +4,7 @@ import Hero from "@/components/sections/Hero";
 import TrustedBy from "@/components/sections/TrustedBy";
 import DlpServices from "@/components/sections/DlpServices";
 import Features from "@/components/sections/Features";
+import DlpCapabilities from "@/components/sections/DlpCapabilities";
 import Process from "@/components/sections/Process";
 import Contact from "@/components/sections/Contact";
 import Trust from "@/components/sections/Trust";
@@ -18,6 +19,7 @@ export default function Home() {
         <TrustedBy />
         <Features />
         <DlpServices />
+        <DlpCapabilities />
         <Trust />
         <Process />
         <TechStack />
